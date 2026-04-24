@@ -1,4 +1,4 @@
-package com.mygdx.game;
+package objects;
 
 import static com.mygdx.game.GameSettings.SCALE;
 
@@ -11,15 +11,24 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.World;
 
 public class GameObject {
-
     public int width;
-    public  Body body;
-    public  int height;
-    protected Texture texture;
-    public  void  draw(SpriteBatch batch) {
+    public int height;
 
+    public Body body;
+    Texture texture;
 
+    GameObject(String texturePath, int x, int y, int width, int height, World world) {
+        this.width = width;
+        this.height = height;
+
+        texture = new Texture(texturePath);
+        body = createBody(x, y, world);
     }
+
+    public void draw(SpriteBatch batch) {
+        batch.draw(texture, getX() - (width / 2f), getY() - (height / 2f), width, height);
+    }
+
     public int getX() {
         return (int) (body.getPosition().x / SCALE);
     }
@@ -35,9 +44,9 @@ public class GameObject {
     public void setY(int y) {
         body.setTransform(body.getPosition().x, y * SCALE, 0);
     }
+
     private Body createBody(float x, float y, World world) {
         BodyDef def = new BodyDef();
-
         def.type = BodyDef.BodyType.DynamicBody;
         def.fixedRotation = true;
         Body body = world.createBody(def);
