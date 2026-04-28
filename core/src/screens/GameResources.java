@@ -1,6 +1,7 @@
-package com.mygdx.game;
+package screens;
 
 public class GameResources {
+    public static final String BULLET_IMG_PATH = "textures/bullet.png";
     public static final String SHIP_IMG_PATH = "textures/ship.png";
     public static final String TRASH_IMG_PATH = "textures/trash.png";
 

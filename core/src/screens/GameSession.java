@@ -1,6 +1,8 @@
-package com.mygdx.game;
+package screens;
 
 import com.badlogic.gdx.utils.TimeUtils;
+
+import screens.GameSettings;
 
 public class GameSession {
 

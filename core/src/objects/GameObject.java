@@ -1,6 +1,6 @@
 package objects;
 
-import static com.mygdx.game.GameSettings.SCALE;
+import static screens.GameSettings.SCALE;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -11,6 +11,7 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.World;
 
 public class GameObject {
+
     public int width;
     public int height;
 
@@ -26,7 +27,11 @@ public class GameObject {
     }
 
     public void draw(SpriteBatch batch) {
-        batch.draw(texture, getX() - (width / 2f), getY() - (height / 2f), width, height);
+        batch.draw(texture,
+                getX() - (width / 2f),
+                getY() - (height / 2f),
+                width,
+                height);
     }
 
     public int getX() {
