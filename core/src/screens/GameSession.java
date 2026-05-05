@@ -6,6 +6,7 @@ import screens.GameSettings;
 
 public class GameSession {
 
+
     long nextTrashSpawnTime;
     long sessionStartTime;
 
