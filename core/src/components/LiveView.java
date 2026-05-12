@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import screens.GameResources;
 
-public class LiveView {
+public class LiveView extends View {
     private final static int livePadding = 6;
     private Texture texture;
 
@@ -36,5 +36,4 @@ public class LiveView {
     }
 
 
-}
 }

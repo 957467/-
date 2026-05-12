@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class ButtonView {
+public class ButtonView extends View {
     Texture texture;
     BitmapFont bitmapFont;
 
@@ -47,5 +47,4 @@ public class ButtonView {
         if (bitmapFont != null) bitmapFont.dispose();
     }
 
-}
 }

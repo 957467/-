@@ -3,7 +3,7 @@ package components;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class ImageView {
+public class ImageView extends View {
 
     Texture texture;
 
@@ -25,5 +25,4 @@ public class ImageView {
     }
 
 
-}
 }

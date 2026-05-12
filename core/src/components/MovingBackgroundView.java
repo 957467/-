@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import screens.GameSettings;
 
-public class MovingBackgroundView {
+public class MovingBackgroundView extends View {
     Texture texture;
 
     int texture1Y;

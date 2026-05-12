@@ -2,21 +2,35 @@ package screens;
 
 import com.badlogic.gdx.utils.TimeUtils;
 
+import components.GameState;
 import screens.GameSettings;
 
 public class GameSession {
 
 
+    public GameState state;
     long nextTrashSpawnTime;
     long sessionStartTime;
+    long pauseStartTime;
 
     public GameSession() {
     }
 
     public void startGame() {
+        state = GameState.PLAYING;
         sessionStartTime = TimeUtils.millis();
         nextTrashSpawnTime = sessionStartTime + (long) (GameSettings.STARTING_TRASH_APPEARANCE_COOL_DOWN
                 * getTrashPeriodCoolDown());
+    }
+
+    public void pauseGame() {
+        state = GameState.PAUSED;
+        pauseStartTime = TimeUtils.millis();
+    }
+
+    public void resumeGame() {
+        state = GameState.PLAYING;
+        sessionStartTime += TimeUtils.millis() - pauseStartTime;
     }
 
     public boolean shouldSpawnTrash() {

@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class TextView {
+public class TextView extends View {
     private BitmapFont font;
     private String text;
     float width;
@@ -41,5 +41,4 @@ public class TextView {
         font.dispose();
     }
 
-}
 }
