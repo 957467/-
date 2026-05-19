@@ -1,11 +1,13 @@
 package components;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import screens.GameSettings;
 
 public class MovingBackgroundView extends View {
+
     Texture texture;
 
     int texture1Y;
@@ -43,4 +45,3 @@ public class MovingBackgroundView extends View {
     }
 
 }
-

@@ -10,6 +10,7 @@ public class ButtonView extends View {
     BitmapFont bitmapFont;
 
     String text;
+
     float textX;
     float textY;
 

@@ -18,8 +18,8 @@ import com.badlogic.gdx.physics.box2d.World;
 import screens.FontBuilder;
 import screens.GameResources;
 import screens.GameSettings;
-
 import screens.GameScreen;
+import screens.MenuScreen;
 
 public class MyGdxGame extends Game {
 	public World world;
@@ -33,6 +33,7 @@ public class MyGdxGame extends Game {
 	public OrthographicCamera camera;
 
 	public GameScreen gameScreen;
+	public MenuScreen menuScreen;
 
 	float accumulator = 0;
 
@@ -51,8 +52,9 @@ public class MyGdxGame extends Game {
 		camera.setToOrtho(false, GameSettings.SCREEN_WIDTH, GameSettings.SCREEN_HEIGHT);
 
 		gameScreen = new GameScreen(this);
+		menuScreen = new MenuScreen(this);
 
-		setScreen(gameScreen);
+		setScreen(menuScreen);
 	}
 
 	@Override

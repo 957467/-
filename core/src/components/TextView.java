@@ -7,11 +7,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class TextView extends View {
     private BitmapFont font;
     private String text;
-    float width;
-    float height;
 
     public TextView(BitmapFont font, float x, float y) {
-        super(y, x);
+        super(x, y);
         this.font = font;
     }
 

@@ -2,9 +2,6 @@ package screens;
 
 import com.badlogic.gdx.utils.TimeUtils;
 
-import components.GameState;
-import screens.GameSettings;
-
 public class GameSession {
 
 

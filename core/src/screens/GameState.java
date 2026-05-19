@@ -1,4 +1,4 @@
-package components;
+package screens;
 
 import com.badlogic.gdx.utils.TimeUtils;
 

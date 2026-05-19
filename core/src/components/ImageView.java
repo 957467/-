@@ -24,5 +24,4 @@ public class ImageView extends View {
         texture.dispose();
     }
 
-
 }

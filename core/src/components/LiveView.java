@@ -7,6 +7,7 @@ import screens.GameResources;
 
 public class LiveView extends View {
     private final static int livePadding = 6;
+
     private Texture texture;
 
     private int leftLives;
@@ -34,6 +35,5 @@ public class LiveView extends View {
     public void dispose() {
         texture.dispose();
     }
-
 
 }
