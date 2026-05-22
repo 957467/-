@@ -31,7 +31,11 @@ public class GameObject {
     }
 
     public void draw(SpriteBatch batch) {
-        batch.draw(texture, getX() - (width / 2f), getY() - (height / 2f), width, height);
+        batch.draw(texture,
+                getX() - (width / 2f),
+                getY() - (height / 2f),
+                width,
+                height);
     }
 
     public void hit() {

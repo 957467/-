@@ -12,6 +12,7 @@ import components.MovingBackgroundView;
 import components.TextView;
 
 public class MenuScreen extends ScreenAdapter {
+
     MyGdxGame myGdxGame;
 
     MovingBackgroundView backgroundView;
@@ -61,9 +62,8 @@ public class MenuScreen extends ScreenAdapter {
                 Gdx.app.exit();
             }
             if (settingsButtonView.isHit(myGdxGame.touch.x, myGdxGame.touch.y)) {
-                System.out.println("Go to settings Screen");
+                myGdxGame.setScreen(myGdxGame.settingsScreen);
             }
         }
     }
 }
-

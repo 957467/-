@@ -18,6 +18,7 @@ public class ShipObject extends GameObject {
         livesLeft = 3;
     }
 
+
     public int getLiveLeft() {
         return livesLeft;
     }

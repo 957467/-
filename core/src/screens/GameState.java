@@ -1,7 +1,4 @@
 package screens;
-
-import com.badlogic.gdx.utils.TimeUtils;
-
 public enum GameState {
     PLAYING,
     PAUSED,

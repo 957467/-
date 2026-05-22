@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class TrashObject extends GameObject {
 
-    private static int paddingHorizontal = 30;
+    private static final int paddingHorizontal = 30;
 
     private int livesLeft;
 
